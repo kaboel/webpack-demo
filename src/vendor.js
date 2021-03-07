@@ -1,1 +1,1 @@
-alert("Hwllo");
+import "bootstrap";
