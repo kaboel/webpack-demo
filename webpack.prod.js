@@ -1,8 +1,8 @@
 const path = require("path");
-const common = require("./webpack.common");
+const config = require("./webpack.config");
 const { merge } = require("webpack-merge");
 
-module.exports = merge(common, {
+module.exports = merge(config, {
   mode: "production",
   entry: "./src/index.js",
   output: {
