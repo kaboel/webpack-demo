@@ -18,6 +18,17 @@ module.exports = {
           "sass-loader", // Step 1: Turns SCSS into CSS
         ],
       },
+      {
+        test: /\.html$/,
+        use: "html-loader",
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "static/[hash][ext]",
+        },
+      },
     ],
   },
 };

@@ -1,12 +1,15 @@
 const path = require("path");
 const config = require("./webpack.config");
 const { merge } = require("webpack-merge");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = merge(config, {
   mode: "production",
   entry: "./src/index.js",
   output: {
     filename: "main.[contenthash].js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(process.cwd(), "dist"),
+    assetModuleFilename: "static",
   },
+  plugins: [new CleanWebpackPlugin()],
 });
