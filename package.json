@@ -1,0 +1,26 @@
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaboel/webpack-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaboel/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/kaboel/webpack-demo#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0"
+  }
+}
